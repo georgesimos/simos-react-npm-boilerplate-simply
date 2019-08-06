@@ -1,0 +1,26 @@
+{
+  "name": "simos-react-npm-boilerplate-simply",
+  "version": "1.0.0",
+  "description": "Publish React modules to NPM!",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist/*",
+    "README.md"
+  ],
+  "scripts": {
+    "prepublishOnly": "babel ./src --out-dir ./dist -s inline"
+  },
+  "author": "George Simos",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "react": "^16.8.6"
+  }
+}
